@@ -128,7 +128,7 @@ def get_train_op(FLAGS, total_loss, grads_and_vars=None):
                      "training so far.")
 
   if FLAGS.weight_decay == 0:
-    optimizer = tf.comat.v1.train.AdamOptimizer(
+    optimizer = tf.compat.v1.train.AdamOptimizer(
         learning_rate=learning_rate,
         epsilon=FLAGS.adam_epsilon)
   else:
