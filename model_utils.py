@@ -12,7 +12,8 @@ from six.moves import zip
 
 from absl import flags
 
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+#import tensorflow as tf
 
 
 def configure_tpu(FLAGS):
