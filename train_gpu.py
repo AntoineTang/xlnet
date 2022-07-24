@@ -12,7 +12,8 @@ import numpy as np
 from absl import flags
 import absl.logging as _logging  # pylint: disable=unused-import
 
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+#import tensorflow as tf
 
 import data_utils
 import model_utils
